@@ -546,6 +546,32 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   border-color: rgba(243, 217, 160, 0.25);
   box-shadow: 0 18px 44px rgba(0,0,0,0.5);
 }
+.venue__art {
+  height: 170px;
+  margin: -32px -30px 22px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 130%, rgba(212,168,74,0.14), transparent 65%),
+    linear-gradient(180deg, rgba(29,24,48,0.55), rgba(13,11,24,0.95));
+  border-bottom: 1px solid rgba(243,217,160,0.08);
+}
+.venue__art::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(13,11,24,0.55));
+  pointer-events: none;
+}
+.venue__art svg {
+  position: relative; z-index: 2;
+  display: block;
+  width: 72%; height: 82%;
+  opacity: 0.92;
+  filter: drop-shadow(0 0 14px rgba(212,168,74,0.22));
+}
 .venue__head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
 .venue__no {
   font-family: var(--font-mono); font-size: 26px; font-weight: 700;
