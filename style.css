@@ -368,6 +368,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   text-align: center; margin-top: 48px; font-family: var(--font-serif);
   font-style: italic; font-size: 18px; color: var(--gold-300); line-height: 2;
 }
+.embed {
+  margin: 40px auto 0; max-width: 720px; border-radius: var(--radius-lg);
+  overflow: hidden; border: 1px solid rgba(243, 217, 160, 0.18);
+  background: rgba(13, 11, 24, 0.6);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+}
+.embed iframe { display: block; width: 100%; border: 0; }
 
 /* ============================================================
    影像 / 视频
