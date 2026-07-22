@@ -19,7 +19,7 @@
   /* ---------- 滚动渐入 ---------- */
   // 给主要区块元素加上 reveal 类
   const revealTargets = document.querySelectorAll(
-    '.section__head, .about__lead, .about__facts, .drink, .track, .tl__item, .live__card, .music__note, .vcard, .video__note'
+    '.section__head, .about__lead, .about__facts, .drink, .track, .tl__item, .live__card, .music__note, .vcard, .video__note, .venue, .venues__note'
   );
   revealTargets.forEach((el) => el.classList.add('reveal'));
 
@@ -41,7 +41,7 @@
   );
 
   // 错开同组元素的渐入时机
-  const staggerGroups = ['.drink', '.track', '.tl__item', '.vcard'];
+  const staggerGroups = ['.drink', '.track', '.tl__item', '.vcard', '.venue'];
   staggerGroups.forEach((sel) => {
     document.querySelectorAll(sel).forEach((el, i) => {
       el.style.transitionDelay = Math.min(i * 70, 420) + 'ms';
